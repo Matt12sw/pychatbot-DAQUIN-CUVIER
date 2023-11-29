@@ -1,4 +1,6 @@
 import os
+open(speeches)
+
 
 def extraire_et_renommer_president(nom_fichier):
     # Liste des noms de présidents
