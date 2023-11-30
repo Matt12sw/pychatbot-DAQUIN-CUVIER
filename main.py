@@ -1,11 +1,9 @@
+#madeleines
 import os
-
-
 def extraire_nom_president(nom_fichier):
     # Supprimer le préfixe "Nomination_" et l'extension ".txt" du nom du fichier
     nom_president = nom_fichier.replace("Nomination_", "").replace(".txt", "")
     return nom_president
-
 
 # Chemin du dossier contenant les fichiers
 dossier = "speeches"
