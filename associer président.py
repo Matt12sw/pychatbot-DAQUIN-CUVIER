@@ -54,7 +54,6 @@ def main():
                 # Vous pouvez faire quelque chose avec le prénom du président et le contenu du discours ici
                 # Par exemple, imprimer le prénom, le nom du président et le contenu du discours
                 print(f"Président: {president_first_name} {president}")
-                print(f"Contenu du discours:\n{speech_content}")
                 print("=" * 50)
 
 
