@@ -77,7 +77,9 @@ dossier_sortie = 'cleaned'
 
 nettoyer_le_texte(dossier_entree, dossier_sortie)
 
-def TF(mots)
+def TF(mots):
+    print("je suis dans la fonction TF")
+
 
 
 
@@ -85,18 +87,21 @@ def IDF(directory):
     os.chdir(directory)
     nb_fichier=0
     texte=""
+    files=""
     nb_mots=0
     IDF_mots=0
     for fichier in os.listdir(directory):
         nb_fichier+=1
         dico={}
-        with open(r'/Users/adrien/PycharmProjects/pychatbot-DAQUIN-CUVIER/cleaned/{files}'.format(file=files),"r")as file:
+        #with open(r'/Users/adrien/PycharmProjects/pychatbot-DAQUIN-CUVIER/cleaned/{files}'.format(file=files),"r")as file:
+        with open(r'cleaned/{files}'.format(file=files),"r") as file:
             texte+=file.read()
             file.close()
-            for mots in text.split():
+            for mots in texte.split():
                 if mots not in dico:
                     for files in os.listdir(directory):
-                        with open(r'/Users/adrien/PycharmProjects/pychatbot-DAQUIN-CUVIER/cleaned/{files}'.format(file=files),"r")as file:
+                        #with open(r'/Users/adrien/PycharmProjects/pychatbot-DAQUIN-CUVIER/cleaned/{files}'.format(file=files),"r")as file:
+                        with open(r'cleaned/{files}'.format(file=files), "r") as file:
                             if mots in file.read():
                                 nb_mots+=1
 
