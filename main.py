@@ -66,7 +66,7 @@ def nettoyer_le_texte(dossier_entree, dossier_sortie):
         if os.path.isfile(chemin_fichier_entree):
             with open(chemin_fichier_entree, 'r') as file:
                 contenu = file.read()
-            contenu_nettoyer = contenu.replace("?", "").replace(",", "").replace("-", "").replace(".", "").replace("!", "").replace("'", "").replace("/n",  " ")
+            contenu_nettoyer = contenu.replace("?", "").replace(",", "").replace("-", "").replace(".", "").replace("!", "").replace("'", "").replace("\n"," ")
             chemin_fichier_sortie = os.path.join(dossier_sortie, fichier)
 
             with open(chemin_fichier_sortie, 'w') as file:
