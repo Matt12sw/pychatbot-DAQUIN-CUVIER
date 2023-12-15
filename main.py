@@ -1,4 +1,3 @@
-
 import os
 import math
 def extraire_nom_president(nom_fichier):

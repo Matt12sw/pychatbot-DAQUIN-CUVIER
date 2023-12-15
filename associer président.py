@@ -78,13 +78,7 @@ dossier_sortie = 'cleaned'
 nettoyer_le_texte(dossier_entree, dossier_sortie)
 
 def TF(mots)
-    a=0
-    b=0
 
-    var_mots=0
-    compteur=0
-    TF_score=0
-    texte=""
 
 
 def IDF(directory):
